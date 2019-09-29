@@ -624,3 +624,34 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+/* Big */
+@media (min-width : 850px) {
+  .two-ladies svg:nth-child(1) {
+    width: 180px;
+    height: 180px;
+  }
+  .two-ladies svg:nth-child(2) {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* Small */
+@media (max-width : 850px) {
+  .two-ladies {
+    height: 100vh;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  .two-ladies svg:nth-child(1) {
+    width: 80px;
+    height: 80px;
+  }
+  .two-ladies svg:nth-child(2) {
+    width: 70px;
+    height: 70px;
+  }
+}
