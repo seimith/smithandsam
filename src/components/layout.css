@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Prata');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -377,6 +380,7 @@ dd {
   margin-bottom: 1.45rem;
 }
 p {
+  font-family: 'Roboto';
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
