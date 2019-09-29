@@ -25,14 +25,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div className="two-ladies"
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        paddingTop: `10em`,
-        paddingBottom: `10em`,
-      }}
-    >
+    <div className="two-ladies">
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -46,7 +39,7 @@ const Header = ({ siteTitle }) => (
             <div style={{ fontFamily: `Prata`, fontSize: `2em`, fontWeight: `100`}}>
               {siteTitle}
             </div>
-            <p style={{ fontFamily: `Times`, fontSize: `0.3em`, fontWeight: `400` }}>
+            <p style={{ fontFamily: `Times` }}>
               TWO LADIES ENABLING OTHER KICKASS LADIES TO REACH THEIR POTENTIAL.
             </p>
           </center>

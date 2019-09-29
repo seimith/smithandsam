@@ -625,9 +625,23 @@ pre tt:after {
   }
 }
 
+/* All */
+.two-ladies {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 960;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  position: relative;
+}
 
 /* Big */
 @media (min-width : 850px) {
+  .two-ladies p {
+    font-size: 0.3em;
+    font-weight: 400;
+  }
   .two-ladies svg:nth-child(1) {
     width: 180px;
     height: 180px;
@@ -640,11 +654,13 @@ pre tt:after {
 
 /* Small */
 @media (max-width : 850px) {
-  .two-ladies {
-    height: 100vh;
-  }
   h1 {
     font-size: 1em;
+  }
+  .two-ladies p {
+    padding: 1em 3em;
+    font-size: 0.6em;
+    font-weight: 100;
   }
   .two-ladies svg:nth-child(1) {
     width: 80px;
