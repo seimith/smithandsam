@@ -8,7 +8,7 @@ const Services = ({ siteTitle }) => {
     DEV: "dev",
     PROD: "prod",
   }
-  const [toggleState, setToggleState] = useState(SERVICE_NAME.ADMIN);
+  const [toggleState, setToggleState] = useState("");
   const toggle = (event) => {
     setToggleState(toggleState != event.target.dataset["name"] ? event.target.dataset["name"] : "");
   };
@@ -23,7 +23,7 @@ const Services = ({ siteTitle }) => {
         }}>
         <center><h1 style={{ paddingTop: `1em`, paddingBottom: `0.5em` }}>Services</h1></center>
         <h3 data-name={SERVICE_NAME.ADMIN} onClick={ toggle }>General Administrative Services
-        { toggleState != SERVICE_NAME.ADMIN ? " (click for more)" : "" }
+        { toggleState != SERVICE_NAME.ADMIN ? " +" : " -" }
          </h3>
         { toggleState === SERVICE_NAME.ADMIN ? <ul>
           <li>Audio transcription</li>
@@ -41,7 +41,7 @@ const Services = ({ siteTitle }) => {
         </ul> : ""}
 
         <h3 data-name={SERVICE_NAME.PROD} onClick={ toggle }>Project Management
-        { toggleState != SERVICE_NAME.PROD ? " (click for more)" : "" }
+        { toggleState != SERVICE_NAME.PROD ? " +" : " -" }
         </h3>
         { toggleState === SERVICE_NAME.PROD ? <ul>
           <li>Plan and implement projects</li>
@@ -52,7 +52,7 @@ const Services = ({ siteTitle }) => {
         </ul> : "" }
 
         <h3 data-name={SERVICE_NAME.SOCIAL} onClick={ toggle }>Social Media Management
-        { toggleState != SERVICE_NAME.SOCIAL ? " (click for more)" : "" }
+        { toggleState != SERVICE_NAME.SOCIAL ? " +" : " -" }
         </h3>
         { toggleState === SERVICE_NAME.SOCIAL ? <ul>
           <li>Facebook</li>
@@ -69,16 +69,16 @@ const Services = ({ siteTitle }) => {
         </ul> : "" }
 
         <h3 data-name={SERVICE_NAME.DEV} onClick={ toggle }>Website Development
-        { toggleState != SERVICE_NAME.DEV ? " (click for more)" : "" }
+        { toggleState != SERVICE_NAME.DEV ? " +" : " -" }
         </h3>
         { toggleState === SERVICE_NAME.DEV ? <ul>
           <li>Setup mobile responsive website</li>
             <ul>
-              <li>Drag and drop website</li>
-              <li>Codified website (React, HTML, CSS, Code Management in GitHub w/ pipeline to deploy to Netlify)</li>
+              <li>Codified website (React, HTML, CSS, Sass, Code Management in GitHub w/ pipeline to deploy to Netlify)</li>
             </ul>
-          <li>Setup domain</li>
+          <li>Domain Setup</li>
           <li>Install and configure blog system (WordPress)</li>
+          <li>Install and eCommerce website (Shopify)</li>
           <li>Customize WorkPress themes</li>
         </ul> : "" }
 

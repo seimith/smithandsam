@@ -513,6 +513,7 @@ th {
   font-weight: bold;
 }
 li {
+  font-family: 'Roboto';
   margin-bottom: calc(1.45rem / 2);
 }
 ol li {
@@ -667,7 +668,7 @@ pre tt:after {
     font-size: 0.6em;
     font-weight: 400;
   }
-  .two-ladies-mini svg{
+  .two-ladies-mini svg {
     width: 50px;
     height: 50px;
   }
@@ -675,8 +676,15 @@ pre tt:after {
 
 /* Small */
 @media (max-width : 850px) {
-  h1 {
+  h1, h2 {
     font-size: 1em;
+  }
+  h3, h4 {
+    font-size: 0.8em;
+  }
+  li {
+    font-size: 0.7em;
+    margin-bottom: 0;
   }
   .two-ladies p {
     padding: 1em 3em;
@@ -698,5 +706,12 @@ pre tt:after {
   .two-ladies-mini svg{
     width: 30px;
     height: 30px;
+  }
+  .pricing-box {
+    margin: 0 10px 2em;
+  }
+  .pricing-box h4, .pricing-box p  {
+    margin: 10px;
+    font-size: 12px;
   }
 }

@@ -31,8 +31,8 @@ const Pricing = ({ siteTitle }) => {
                 <p>$880</p>
             </div>
           </div>
+          <h3 style={{ paddingTop: `1em`, paddingBottom: `0.5em` }}>How does this work?</h3>
         </center>
-        <h3 style={{ paddingTop: `1em`, paddingBottom: `0.5em` }}>How does this work?</h3>
         <ol>
           <li>We have a 30 - 45 minutes conversation.</li>
           <li>We decide how many hours you need us.</li>
