@@ -20,11 +20,12 @@ const IndexPage = ({ children }) => {
   `)
 return (
   <>
+    <div className="banner"><center><span role="img">🎉</span> Now accepting clients! Scroll down to learn more about our services.</center></div>
     <Header siteTitle={data.site.siteMetadata.title} />
     <Layout>
       <SEO title="Home" />
       <div>
-        <center><h1 style={{ paddingTop: `1em`, paddingBottom: `0.5em` }}>Hey there, nice to meet you.</h1></center>
+        <center><h1>Hey there, nice to meet you.</h1></center>
         <p style={{ fontWeight: `100`, lineHeight: `2em`, letterSpacing: `0.1em`, fontSize: `0.8em`}}>
           If you're here, you're probaby an amazing woman who's trying to get stuff done in your life.
           We get it and we understand you. We're two sisters (Smith and Sam) that want to help you.

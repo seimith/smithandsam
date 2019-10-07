@@ -3,6 +3,7 @@ import React, { useState } from "react"
 
 const Services = ({ siteTitle }) => {
   const SERVICE_NAME = {
+    CUSTOMER: "customer",
     ADMIN: "admin",
     SOCIAL: "social",
     DEV: "dev",
@@ -10,20 +11,17 @@ const Services = ({ siteTitle }) => {
   }
   const [toggleState, setToggleState] = useState("");
   const toggle = (event) => {
-    setToggleState(toggleState != event.target.dataset["name"] ? event.target.dataset["name"] : "");
+    setToggleState(toggleState !== event.target.dataset["name"] ? event.target.dataset["name"] : "");
   };
   return (
-    <div style={{ background: `#EADEE5` }}>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}>
-        <center><h1 style={{ paddingTop: `1em`, paddingBottom: `0.5em` }}>Services</h1></center>
-        <h3 data-name={SERVICE_NAME.ADMIN} onClick={ toggle }>General Administrative Services
-        { toggleState != SERVICE_NAME.ADMIN ? " +" : " -" }
+    <div style={{ background: `#EADEE5` }} id="services">
+      <div className="section">
+        <center>
+          <h1>Services</h1>
+        </center>
+
+        <h3 data-name={SERVICE_NAME.ADMIN} onClick={ toggle }>Administrative Services
+        { toggleState !== SERVICE_NAME.ADMIN ? " +" : " -" }
          </h3>
         { toggleState === SERVICE_NAME.ADMIN ? <ul>
           <li>Audio transcription</li>
@@ -40,8 +38,17 @@ const Services = ({ siteTitle }) => {
           <li>Webinar Assistance</li>
         </ul> : ""}
 
+        <h3 data-name={SERVICE_NAME.CUSTOMER} onClick={ toggle }>Customer Services
+        { toggleState !== SERVICE_NAME.CUSTOMER ? " +" : " -" }
+         </h3>
+        { toggleState === SERVICE_NAME.CUSTOMER ? <ul>
+          <li>Answering phone calls and emails</li>
+          <li>Responding to customer questions and complaints</li>
+          <li>Walking customers through basic troubleshooting</li>
+        </ul> : ""}
+
         <h3 data-name={SERVICE_NAME.PROD} onClick={ toggle }>Project Management
-        { toggleState != SERVICE_NAME.PROD ? " +" : " -" }
+        { toggleState !== SERVICE_NAME.PROD ? " +" : " -" }
         </h3>
         { toggleState === SERVICE_NAME.PROD ? <ul>
           <li>Plan and implement projects</li>
@@ -52,7 +59,7 @@ const Services = ({ siteTitle }) => {
         </ul> : "" }
 
         <h3 data-name={SERVICE_NAME.SOCIAL} onClick={ toggle }>Social Media Management
-        { toggleState != SERVICE_NAME.SOCIAL ? " +" : " -" }
+        { toggleState !== SERVICE_NAME.SOCIAL ? " +" : " -" }
         </h3>
         { toggleState === SERVICE_NAME.SOCIAL ? <ul>
           <li>Facebook</li>
@@ -69,7 +76,7 @@ const Services = ({ siteTitle }) => {
         </ul> : "" }
 
         <h3 data-name={SERVICE_NAME.DEV} onClick={ toggle }>Website Development
-        { toggleState != SERVICE_NAME.DEV ? " +" : " -" }
+        { toggleState !== SERVICE_NAME.DEV ? " +" : " -" }
         </h3>
         { toggleState === SERVICE_NAME.DEV ? <ul>
           <li>Setup mobile responsive website</li>

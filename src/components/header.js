@@ -21,8 +21,7 @@ const SVG_SAM = <svg data-v-d3f97b9e="" xmlns="http://www.w3.org/2000/svg" viewB
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#EADEE5`,
-      marginBottom: `1.45rem`,
+      background: `#EADEE5`
     }}
   >
     <div className="two-ladies">

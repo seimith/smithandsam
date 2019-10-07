@@ -1,44 +1,55 @@
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React from "react"
 
 const Pricing = ({ siteTitle }) => {
-  const [toggleState, setToggleState] = useState("");
-  const toggle = (event) => {
-    // setToggleState(toggleState != event.target.dataset["name"] ? event.target.dataset["name"] : "");
-  };
   return (
     <div style={{ background: `#FFFFFF` }}>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}>
+      <div className="section">
         <center>
-          <h1 style={{ paddingTop: `1em`, paddingBottom: `0.5em` }}>Pricing with 1 Month Retainer</h1>
+          <h1>Pricing with 1 Month Retainer</h1>
           <div style={{ width: `100%`}}>
             <div className="pricing-box">
-                <h4 onClick={ toggle }>8 HOURS PER MONTH</h4>
+                <h4>10 HOURS PER MONTH</h4>
                 <p>$440</p>
             </div>
             <div className="pricing-box">
-                <h4 onClick={ toggle }>12 HOURS PER MONTH</h4>
+                <h4>12 HOURS PER MONTH</h4>
                 <p>$660</p>
             </div>
             <div className="pricing-box">
-                <h4 onClick={ toggle }>16 HOURS PER MONTH</h4>
+                <h4>16 HOURS PER MONTH</h4>
                 <p>$880</p>
+            </div>
+          </div>
+        </center>
+
+        <center>
+          <h1>Project Packages</h1>
+          <div style={{ width: `100%`}}>
+            <div className="pricing-box">
+                <h4>Static Website<br/>(5 pages)</h4>
+                <p>$2,000+</p>
+            </div>
+            <div className="pricing-box">
+                <h4>WordPress<br/>Blog</h4>
+                <p>$3,000+</p>
             </div>
           </div>
           <h3 style={{ paddingTop: `1em`, paddingBottom: `0.5em` }}>How does this work?</h3>
         </center>
         <ol>
-          <li>We have a 30 - 45 minutes conversation.</li>
-          <li>We decide how many hours you need us.</li>
-          <li>We scope out goals and a create a timeline.</li>
-          <li>We give you a contract.</li>
-          <li>Then, we're off to the races!</li>
+          <li>
+            <strong>We'll have a 30 minute consultation call</strong>
+            <ul>
+              <li>We’ll meet on Zoom or Google Hangout to figure out what your needs are.</li>
+              <li>We'll decide how many hours you need us.</li>
+              <li>Scope out tasks and goals.</li>
+              <li>Decide on a start date and end date.</li>
+              <li>Agree on hours of work and a payment plan.</li>
+            </ul>
+          </li>
+          <li><strong>We'll send you a contract.</strong></li>
+          <li><strong>Then, we're off to the races!</strong></li>
         </ol>
       </div>
     </div>

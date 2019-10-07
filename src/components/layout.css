@@ -627,6 +627,11 @@ pre tt:after {
 }
 
 /* All */
+.section {
+  margin: 0px auto;
+  max-width: 960px;
+  padding: 2em;
+}
 .two-ladies {
   height: 100vh;
   margin: 0 auto;
@@ -640,20 +645,35 @@ pre tt:after {
   padding: 1em;
 }
 .pricing-box {
+  line-height: 2em;
+  letter-spacing: 0.1em;
+
   background-color: rgb(234, 222, 229);
   border-radius: 10px;
   width: 25%;
   margin: 1em;
   display: inline-block;
   padding-top: 0;
+  min-height: 190px;
 }
-
 .pricing-box h4 {
   margin-top: 1.45rem;
+}
+.banner {
+  background-color: #936380;
+  color: #FFFFFF;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 /* Big */
 @media (min-width : 850px) {
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0.5em;
+  }
   .two-ladies p {
     font-size: 0.3em;
     font-weight: 400;
@@ -678,13 +698,18 @@ pre tt:after {
 @media (max-width : 850px) {
   h1, h2 {
     font-size: 1em;
+    /*margin: 0;*/
   }
-  h3, h4 {
+  h3 {
     font-size: 0.8em;
+    /*margin: 0;*/
   }
   li {
     font-size: 0.7em;
     margin-bottom: 0;
+  }
+  p {
+    margin: 0;
   }
   .two-ladies p {
     padding: 1em 3em;
@@ -703,12 +728,14 @@ pre tt:after {
     font-size: 0.8em;
     font-weight: 400;
   }
-  .two-ladies-mini svg{
+  .two-ladies-mini svg {
     width: 30px;
     height: 30px;
   }
   .pricing-box {
     margin: 0 10px 2em;
+
+    min-height: 90px;
   }
   .pricing-box h4, .pricing-box p  {
     margin: 10px;
