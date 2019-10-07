@@ -31,7 +31,7 @@ const Pricing = ({ siteTitle }) => {
                 <p>$2,000+</p>
             </div>
             <div className="pricing-box">
-                <h4>WordPress<br/>Blog</h4>
+                <h4>Wordpress Blog<br/>(5 addons)</h4>
                 <p>$3,000+</p>
             </div>
           </div>

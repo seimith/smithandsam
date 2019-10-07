@@ -20,7 +20,7 @@ const SecondPage = () => (
       assurance analysts.
       </p>
       <p>Today, Smith still loves development and is deep in the trenches of Design Systems during the day, and by night she's freelancing.</p>
-
+      <br/><br/>
       <h3>Sam</h3>
       <p>Sam studied Psychology & Biology and spent 6 years in academia working at a Parkinson's Disease research lab. As a lab manager, Sam was
       in charge of...</p>

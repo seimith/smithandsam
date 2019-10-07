@@ -23,7 +23,7 @@ return (
     <div className="banner"><center><span role="img">🎉</span> Now accepting clients! Scroll down to learn more about our services.</center></div>
     <Header siteTitle={data.site.siteMetadata.title} />
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Consulting Agency" />
       <div>
         <center><h1>Hey there, nice to meet you.</h1></center>
         <p style={{ fontWeight: `100`, lineHeight: `2em`, letterSpacing: `0.1em`, fontSize: `0.8em`}}>
