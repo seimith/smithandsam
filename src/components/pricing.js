@@ -9,16 +9,16 @@ const Pricing = ({ siteTitle }) => {
           <h1>Pricing with 1 Month Retainer</h1>
           <div style={{ width: `100%`}}>
             <div className="pricing-box">
-                <h4>10 HOURS PER MONTH</h4>
-                <p>$440</p>
+                <h4>10 HOURS<br/>PER MONTH</h4>
+                <p>$450</p>
             </div>
             <div className="pricing-box">
-                <h4>12 HOURS PER MONTH</h4>
-                <p>$660</p>
+                <h4>12 HOURS<br/>PER MONTH</h4>
+                <p>$540</p>
             </div>
             <div className="pricing-box">
-                <h4>16 HOURS PER MONTH</h4>
-                <p>$880</p>
+                <h4>16 HOURS<br/>PER MONTH</h4>
+                <p>$720</p>
             </div>
           </div>
         </center>
@@ -32,7 +32,7 @@ const Pricing = ({ siteTitle }) => {
             </div>
             <div className="pricing-box">
                 <h4>Wordpress Blog<br/>(5 addons)</h4>
-                <p>$3,000+</p>
+                <p>$2,000+</p>
             </div>
           </div>
           <h3 style={{ paddingTop: `1em`, paddingBottom: `0.5em` }}>How does this work?</h3>

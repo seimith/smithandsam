@@ -696,20 +696,23 @@ pre tt:after {
 
 /* Small */
 @media (max-width : 850px) {
-  h1, h2 {
+  h1, h2, h3 {
     font-size: 1em;
-    /*margin: 0;*/
-  }
-  h3 {
-    font-size: 0.8em;
-    /*margin: 0;*/
   }
   li {
-    font-size: 0.7em;
     margin-bottom: 0;
+    font-weight: 100;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
   }
-  p {
-    margin: 0;
+  p {;
+    margin: 0 0 1em;
+
+    font-weight: 100;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
   }
   .two-ladies p {
     padding: 1em 3em;
