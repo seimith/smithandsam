@@ -7,6 +7,7 @@ const Services = ({ siteTitle }) => {
     ADMIN: "admin",
     SOCIAL: "social",
     DEV: "dev",
+    DES: "des",
     PROD: "prod",
   }
   const [toggleState, setToggleState] = useState("");
@@ -47,6 +48,15 @@ const Services = ({ siteTitle }) => {
           <li>Walking customers through basic troubleshooting</li>
         </ul> : ""}
 
+        <h3 data-name={SERVICE_NAME.DES} onClick={ toggle }>Design Services
+        { toggleState !== SERVICE_NAME.DES ? " +" : " -" }
+        </h3>
+        { toggleState === SERVICE_NAME.DES ? <ul>
+          <li>Vector art ("Affinity Designer")</li>
+          <li>Canva asset creation</li>
+          <li>Raster photoshopping</li>
+        </ul> : "" }
+
         <h3 data-name={SERVICE_NAME.PROD} onClick={ toggle }>Project Management
         { toggleState !== SERVICE_NAME.PROD ? " +" : " -" }
         </h3>
@@ -67,26 +77,35 @@ const Services = ({ siteTitle }) => {
           <li>Pinterest</li>
           <li>Twitter</li>
           <li>YouTube</li>
-          <li>* All of these include:</li>
-          <ul>
-            <li>Account Setup</li>
-            <li>Scheduled posts/video/tweets/likes</li>
-            <li>Customer Engagements</li>
-          </ul>
+          <li>All of these include:
+            <ul>
+              <li>Account Setup</li>
+              <li>Scheduled posts/video/tweets/likes</li>
+              <li>Customer Engagements</li>
+            </ul>
+          </li>
         </ul> : "" }
 
-        <h3 data-name={SERVICE_NAME.DEV} onClick={ toggle }>Website Development
+        <h3 data-name={SERVICE_NAME.DEV} onClick={ toggle }>Website & Application Development
         { toggleState !== SERVICE_NAME.DEV ? " +" : " -" }
         </h3>
         { toggleState === SERVICE_NAME.DEV ? <ul>
-          <li>Setup mobile responsive website</li>
+          <li>Develop mobile responsive website
             <ul>
-              <li>Codified website (React, HTML, CSS, Sass, Code Management in GitHub w/ pipeline to deploy to Netlify)</li>
+              <li>React, HTML, CSS, Sass, Code Management in GitHub w/ pipeline to deploy to "Netlify")</li>
             </ul>
+          </li>
           <li>Domain Setup</li>
-          <li>Install and configure blog system (WordPress)</li>
-          <li>Install and eCommerce website (Shopify)</li>
+          <li>Install and configure blog ("WordPress")</li>
+          <li>Install eCommerce website ("Shopify")</li>
           <li>Customize WorkPress themes</li>
+          <li>Design System Strategy
+            <ul>
+              <li>Application/Website UI auditing</li>
+              <li>Component library planning</li>
+              <li>Stylesheet guidelines</li>
+            </ul>
+          </li>
         </ul> : "" }
 
       </div>
