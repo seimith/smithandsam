@@ -627,7 +627,17 @@ pre tt:after {
 }
 
 /* All */
-.section {
+button {
+  background-color: #936380 !important;
+  color: #FFFFFF;
+}
+p, li {
+  font-weight: 100;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+}
+.ss-section {
   margin: 0px auto;
   max-width: 960px;
   padding: 2em;
@@ -667,6 +677,27 @@ pre tt:after {
   width: 100%;
   z-index: 1;
 }
+.contact input,
+.contact textarea,
+.contact button,
+.select-style {
+  padding: 0.6em;
+  width: 75%;
+  border: 0;
+  background-color: #EADEE5;
+  margin: 0 0 1em;
+
+}
+.select-style select {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  width: 100%;
+}
+.select-style select:focus {
+  outline: none;
+}
 
 /* Big */
 @media (min-width : 850px) {
@@ -701,23 +732,12 @@ pre tt:after {
   }
   li {
     margin-bottom: 0;
-    font-weight: 100;
-    line-height: 2em;
-    letter-spacing: 0.1em;
-    font-size: 0.8em;
   }
-  p {;
+  p {
     margin: 0 0 1em;
-
-    font-weight: 100;
-    line-height: 2em;
-    letter-spacing: 0.1em;
-    font-size: 0.8em;
   }
   .two-ladies p {
     padding: 1em 3em;
-    font-size: 0.8em;
-    font-weight: 100;
   }
   .two-ladies svg {
     width: 80px;
@@ -744,5 +764,11 @@ pre tt:after {
   .pricing-box h4, .pricing-box p  {
     margin: 10px;
     font-size: 12px;
+  }
+  .contact input,
+  .contact textarea,
+  .contact button,
+  .select-style {
+    width: 100% !important;
   }
 }

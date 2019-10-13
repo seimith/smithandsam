@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 
-const Services = ({ siteTitle }) => {
+const Services = ({ siteTitle, color }) => {
   const SERVICE_NAME = {
     CUSTOMER: "customer",
     ADMIN: "admin",
@@ -15,10 +15,10 @@ const Services = ({ siteTitle }) => {
     setToggleState(toggleState !== event.target.dataset["name"] ? event.target.dataset["name"] : "");
   };
   return (
-    <div style={{ background: `#EADEE5` }} id="services">
-      <div className="section">
+    <div style={{ background: color }} id="services">
+      <div className="ss-section">
         <center>
-          <h1>Services</h1>
+          <h1 className="ss-section-header">{siteTitle}</h1>
         </center>
 
         <h3 data-name={SERVICE_NAME.ADMIN} onClick={ toggle }>Administrative Services
@@ -86,7 +86,7 @@ const Services = ({ siteTitle }) => {
           </li>
         </ul> : "" }
 
-        <h3 data-name={SERVICE_NAME.DEV} onClick={ toggle }>Website & Application Development
+        <h3 data-name={SERVICE_NAME.DEV} onClick={ toggle }>Website Development
         { toggleState !== SERVICE_NAME.DEV ? " +" : " -" }
         </h3>
         { toggleState === SERVICE_NAME.DEV ? <ul>
