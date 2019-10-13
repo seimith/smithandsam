@@ -1,16 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeaderMini from "../components/header-mini"
 
 const SecondPage = () => (
   <>
     <HeaderMini siteTitle='Smith & Sam' />
-    <Layout>
-      <SEO title="About Us" />
-      <center><h1 style={{ paddingTop: `1em`, paddingBottom: `0.5em` }}>So you want to learn more about us...</h1></center>
+    <SEO title="About Us" />
+    <div className="ss-section">
+      <center>
+        <h1 className="ss-section-header">More about us...</h1>
+      </center>
 
       <h3>Smith</h3>
       <p>Smith studied Financial Mathematics, but decided that the actuarial life wasn't for her. So, her first job was as an Executive Assistant in Boston, MA.
@@ -22,14 +23,14 @@ const SecondPage = () => (
       <br/><br/>
       <h3>Sam</h3>
       <p>Sam studied Neuroscience and spent 6 years in academia working at a Parkinson's Disease research lab, and
-      then at an Alzheimer's Disease research lab as a Technical Research Assistant. There, she ran multiple projects at once and <a href="https://www.labmanager.com/business-management/2015/02/lab-inventory-management-guide" target="_blank">controlled the lab's inventory</a>. </p>
+      then at an Alzheimer's Disease research lab as a Technical Research Assistant. There, she ran multiple projects at once and <a href="https://www.labmanager.com/business-management/2015/02/lab-inventory-management-guide" target="_blank" rel="noopener noreferrer">controlled the lab's inventory</a>. </p>
       <p>Sam took an adventurous turn outside of the laboratory and explored education through vocal narration for videos on
       scientific protocols. Her adventurous streak took her far from the world of research and into a different environment of
       customer service. </p>
 
       <p>She remains interested in biological sciences and wants to apply her wide arsenal of skills into productive products of sorts.</p>
       <p><Link to="/">Return to the homepage</Link></p>
-    </Layout>
+    </div>
   </>
 )
 
