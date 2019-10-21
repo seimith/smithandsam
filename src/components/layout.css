@@ -785,6 +785,11 @@ p, li {
   p {
     margin: 0 0 1em;
   }
+  .package-website-pricing-box {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
   .two-ladies p {
     padding: 1em 3em;
   }

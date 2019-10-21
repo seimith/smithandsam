@@ -26,7 +26,7 @@ const Pricing = ({ siteTitle, color }) => {
             <div className="pricing-box">
               <Link to="/package-website/">
                 <h4>Website Package</h4>
-                <p>$2,000+<br/><span class="learn-more">(Click to learn more)</span></p>
+                <p>$75 per month+<br/><span class="learn-more">(Click to learn more)</span></p>
               </Link>
             </div>
           </div>
