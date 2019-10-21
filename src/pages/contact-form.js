@@ -15,10 +15,8 @@ const ContactForm = ({ siteTitle, color }) => {
             <div className="select-style">
               <select name="service">
                 <option value="10-hours-450">10 hours per month - $450</option>
-                <option value="12-hours-540">12 hours per month - $540</option>
                 <option value="16-hours-720">16 hours per month - $720</option>
-                <option value="package-website-2,000">Static Website - starting at $2,000</option>
-                <option value="package-blog-2,000">Wordpress Blog - starting at $2,000</option>
+                <option value="package-website-2,000">Website Package - starting at $2,000</option>
               </select>
             </div>
             <textarea name="message" placeholder="Message"></textarea><br/>

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Smith & Sam Co.`,
+    title: `Smith & Sam`,
     description: `TWO LADIES ENABLING OTHER AWESOME LADIES REACH THEIR POTENTIAL.`,
-    author: `Smith & Sam Co.`,
+    author: `Smith & Sam`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

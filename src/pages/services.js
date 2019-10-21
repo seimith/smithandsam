@@ -3,7 +3,6 @@ import React, { useState } from "react"
 
 const Services = ({ siteTitle, color }) => {
   const SERVICE_NAME = {
-    CUSTOMER: "customer",
     ADMIN: "admin",
     SOCIAL: "social",
     DEV: "dev",
@@ -37,15 +36,6 @@ const Services = ({ siteTitle, color }) => {
           <li>Voicemail (check and screen)</li>
           <li>Word Processing / Google Doc</li>
           <li>Webinar Assistance</li>
-        </ul> : ""}
-
-        <h3 data-name={SERVICE_NAME.CUSTOMER} onClick={ toggle }>Customer Services
-        { toggleState !== SERVICE_NAME.CUSTOMER ? " +" : " -" }
-         </h3>
-        { toggleState === SERVICE_NAME.CUSTOMER ? <ul>
-          <li>Answering phone calls and emails</li>
-          <li>Responding to customer questions and complaints</li>
-          <li>Walking customers through basic troubleshooting</li>
         </ul> : ""}
 
         <h3 data-name={SERVICE_NAME.DES} onClick={ toggle }>Design Services

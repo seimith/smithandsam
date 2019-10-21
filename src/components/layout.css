@@ -657,17 +657,20 @@ p, li {
 .pricing-box {
   line-height: 2em;
   letter-spacing: 0.1em;
-
   background-color: rgb(234, 222, 229);
   border-radius: 10px;
   width: 25%;
   margin: 1em;
   display: inline-block;
   padding-top: 0;
-  min-height: 190px;
+  /*min-height: 190px;*/
 }
 .pricing-box h4 {
   margin-top: 1.45rem;
+}
+.pricing-box a {
+  color: #000000;
+  text-decoration: none;
 }
 .banner {
   background-color: #936380;
@@ -698,7 +701,50 @@ p, li {
 .select-style select:focus {
   outline: none;
 }
+.pricing-box .learn-more {
+  font-size: 12px;
+}
+.package-website-pricing-box {
+  width: 30%;
+  background-color: rgb(234, 222, 229);
+  display: inline-block;
+  text-align: left;
+  padding: 0.2em;
+  margin: 0.4em;
+  vertical-align: top;
+  border-radius: 10px;
+}
 
+
+.price-sep {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    background-color: rgb(234, 222, 229);
+}
+
+.price-sep:after {
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px #000000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.price-sep h3 {
+    background-color: rgb(234, 222, 229);
+    width: auto;
+    display: inline-block;
+    z-index: 3;
+    padding: 5px 20px 0 20px;
+    color: #000000;
+    position: relative;
+    margin: 0;
+}
 /* Big */
 @media (min-width : 850px) {
   h1, h2, h3, p {
@@ -722,6 +768,9 @@ p, li {
   .two-ladies-mini svg {
     width: 50px;
     height: 50px;
+  }
+  .pricing-box h4, .pricing-box p  {
+    margin: 1em 0 0.5em;
   }
 }
 
